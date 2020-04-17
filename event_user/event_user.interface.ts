@@ -1,7 +1,10 @@
-import { Platform } from "../platform/platform.interface";
+import { PlatformEntity } from "../platform/platform.interface";
+import { DateEntity } from "../date_entity/date_entity.interface";
+import { EventEntity } from "../event/event.interface";
 
-export interface EventUser{
+export interface EventUserEntity{
   id: number;
-  dates: Date[];
-  platforms: Platform[]
+  dates: DateEntity[];
+  platforms: PlatformEntity[];
+  event?: EventEntity
 }

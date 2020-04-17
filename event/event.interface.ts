@@ -1,12 +1,20 @@
-import { Platform } from "../platform/platform.interface";
-import { EventUser } from "../event_user/event_user.interface";
+import { PlatformEntity } from "../platform/platform.interface";
+import { EventUserEntity } from "../event_user/event_user.interface";
 
-export interface Event {
-  title: string;
-  eventId: string;
+export interface EventEntity{
   id: number;
+
+  title: string;
+
+  eventId: string;
+
   optimalDate: Date;
-  optimalPlatform: Platform;
+
+  optimalPlatform: PlatformEntity
+
   voted_count: number;
-  users: EventUser[];
+
+  users: EventUserEntity[];
+
+  platforms: PlatformEntity[];
 }
