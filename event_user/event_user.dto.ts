@@ -1,5 +1,5 @@
-import { DateEntity } from "../../event-user/models/date.entity";
-import { PlatformEntity } from "../../platform/models/platform.entity";
+import { PlatformEntity } from '../platform/platform.interface';
+import { DateEntity } from '../date_entity/date_entity.interface';
 
 export interface EventUserDto{
   dates: DateEntity[];
