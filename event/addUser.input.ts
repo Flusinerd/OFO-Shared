@@ -1,4 +1,4 @@
-import { CreateUserInput } from '../event_user/createUser.input';
+import { EventUserInput } from "../event_user/event_user.input";
 
 export interface AddUserInput {
   eventId: number;
@@ -6,7 +6,7 @@ export interface AddUserInput {
   /**
    * Pass either the user via userData or the userId
    */
-  userData?: CreateUserInput;
+  userData?: EventUserInput;
 
   /**
    * Pass either the user via userData or the userId
