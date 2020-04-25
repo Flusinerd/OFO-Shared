@@ -14,11 +14,13 @@ export interface AddDatesInput {
 
 export interface DateInput{
   id?: number;
-  date: Date;
+  startDate: Date;
+  endDate: Date;
   user?: EventUserInput;
 }
 
 export interface DateResponse{
   id: number;
-  date: Date;
+  startDate: Date;
+  endDate: Date;
 }
