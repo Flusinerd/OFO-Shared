@@ -1,5 +1,5 @@
-import { PlatformEntity } from "../platform/platform.interface";
-import { EventUserEntity } from "../event_user/event_user.interface";
+import { PlatformEntity } from '../platform/platform.interface';
+import { EventUserEntity } from '../event_user/event_user.interface';
 
 export interface EventEntity{
   id: number;
@@ -12,9 +12,9 @@ export interface EventEntity{
 
   optimalPlatform: PlatformEntity
 
-  voted_count: number;
+  voted_count?: number;
 
-  users: EventUserEntity[];
+  users?: EventUserEntity[];
 
-  platforms: PlatformEntity[];
+  platforms?: PlatformEntity[];
 }
