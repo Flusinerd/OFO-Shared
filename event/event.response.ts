@@ -1,4 +1,5 @@
-import { PlatformResponse } from "../platform/platform.response";
+import { PlatformResponse } from '../platform/platform.response';
+
 
 export interface EventResponse {
   id: number;
