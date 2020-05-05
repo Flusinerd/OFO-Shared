@@ -7,4 +7,5 @@ export interface GetUserResponse {
   dates: DateResponse[];
   platforms: PlatformEntity[];
   event: EventResponse;
+  name?: string;
 }
